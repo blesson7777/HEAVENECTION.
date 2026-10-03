@@ -1,0 +1,15 @@
+{
+  "name": "heavenection-workspace",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix admin_dashboard run dev",
+    "dev:api": "npm --prefix backend run dev",
+    "build:web": "npm --prefix admin_dashboard run build",
+    "build:api": "npm --prefix backend run build",
+    "test:api": "npm --prefix backend test",
+    "db:up": "docker compose up -d --wait",
+    "db:stop": "docker compose stop",
+    "db:migrate": "npm --prefix backend run db:migrate",
+    "setup:admin": "npm --prefix backend run setup:admin"
+  }
+}
